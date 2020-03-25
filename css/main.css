@@ -7,10 +7,13 @@ aside{
     background-color: #bbb;
     overflow: scroll;
 }
-aside button{
+.aside--btn{
+    background: url(../image/logo-black.png) center center/cover;
     position: relative;
     top: 10px;
     left: 15%;
+    width: 161px;
+    height: 150.5px;
 }
 aside button img{
     width: 150px;
