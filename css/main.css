@@ -8,12 +8,22 @@ aside{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: scroll;
+}
+aside button{
+    margin-top: 150px;
 }
 aside button img{
-    width: 200px;
+    width: 150px;
 }
 nav{
     font-size: 14px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+.nav__title{
+    font-weight: bold;
+    margin-top: 20px;
 }
 main{
     position: absolute;
