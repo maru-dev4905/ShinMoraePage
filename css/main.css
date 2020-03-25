@@ -5,18 +5,20 @@ aside{
     width: 15%;
     height: 100%;
     background-color: #bbb;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     overflow: scroll;
 }
 aside button{
-    margin-top: 150px;
+    position: relative;
+    top: 10px;
+    left: 15%;
 }
 aside button img{
     width: 150px;
 }
 nav{
+    width:auto;
+    height: auto;
+    position: absolute;
     font-size: 14px;
     padding: 0 20px;
     margin-bottom: 20px;
