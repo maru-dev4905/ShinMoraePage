@@ -4,16 +4,21 @@ aside{
     left: 0;
     width: 15%;
     height: 100%;
-    background-color: rgb(236, 236, 236);
+    background-color: #E2E2E2;
     overflow: scroll;
 }
 .aside--btn{
-    background: url(../image/logo-black.png) center center/cover;
+    background-color: #fff;
+    border-radius: 50px;
     position: relative;
     top: 10px;
-    left: 15%;
-    width: 161px;
-    height: 150.5px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../image/moon.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 aside button img{
     width: 150px;
@@ -49,7 +54,7 @@ main{
 .banner span{
     font-size: 250px;
 }
-.section__main{
+.section--main{
     display: flex;
     flex-direction: row;
     background-color: #f4f4f4f4;

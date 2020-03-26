@@ -1,11 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    transition: 0.5s;
 }
 button{
-    background: none;
     border: none;
     cursor: pointer;
+}
+button:focus{
+    outline: none;
 }
 li{
     list-style: none;
