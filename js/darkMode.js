@@ -11,8 +11,6 @@ const LOCALCHECK = localStorage.getItem(CHANGECHECK);
 
 let darkModeCheck = "white";
 
-localStorage.setItem(CHANGECHECK,darkModeCheck);
-
 blackMode = () => {
     aside.style.backgroundColor = "#E2E2E2"
     

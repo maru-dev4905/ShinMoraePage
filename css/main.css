@@ -66,6 +66,15 @@ main{
 .banner span{
     font-size: 26px;
 }
+.section__title{
+    height: 100px;
+    justify-content: left;
+    padding-left: 50px;
+}
+.section__title h3{
+    font-size: 50px;
+    text-transform: uppercase;
+}
 .section--main{
     display: flex;
     flex-direction: row;
