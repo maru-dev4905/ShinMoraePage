@@ -62,12 +62,13 @@ main{
     -webkit-text-fill-color: transparent;
     background-image:url(../image/img.jpg);
     background-attachment: fixed;
+    overflow-y: hidden;
 }
 .banner span{
     font-size: 26px;
 }
 .section__title{
-    height: 100px;
+    height: 10%;
     justify-content: left;
     padding-left: 50px;
 }
@@ -83,6 +84,19 @@ main{
 .section__main_text{
     width: 40%;
     font-size: 18px;
+}
+.commingSoon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    padding: 0;
+}
+.commingSoon > .section__main_text{
+    text-align: center;
+}
+p[class=section__main_text]{
+    background-color: red;
 }
 .section__main_gallery{
     display: grid;
