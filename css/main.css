@@ -136,3 +136,27 @@ p[class=section__main_text]{
     grid-column: 2/3;
     grid-row: 3/4;
 }
+
+.section__gallery{
+    justify-content: left;
+    align-items: flex-start;
+    padding: 15px;
+}
+.gallery__column{
+    column-width: auto;
+    column-gap: 15px;
+}
+.gallery__column figure{
+    display: inline-block;
+    border: 1px solid rgba(0, 0,0, 0.2);
+    margin: 0;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+.gallery__column figure img{
+    width: 100%;
+}
+.gallery__column figure figcaption{
+    border-top: 1px solid rgba(0,0,0,0.2);
+    padding:10px;
+}
