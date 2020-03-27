@@ -5,30 +5,37 @@
     overflow-x: hidden;
     font-family: "Courier New", Courier, monospace;
 }
-button{
+button {
     border: none;
     cursor: pointer;
 }
-button:focus{
+button:focus {
     outline: none;
 }
-li{
+li {
     list-style: none;
     margin-top: 2px;
 }
-li:hover{
+li:hover {
     transform: translateX(10px);
 }
-a{
+a {
     text-decoration: none;
 }
 
-.underLine{
+.underLine {
     text-decoration: underline;
 }
-.bold{
+.bold {
     font-weight: bold;
 }
-.bgc_pink{
+.bgc_pink {
     background-color: rgb(253, 199, 235);
+}
+.nodrag {
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
 }
