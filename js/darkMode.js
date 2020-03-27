@@ -12,7 +12,9 @@ const CHANGECHECK = "darkMode";
 const LOCALCHECK = localStorage.getItem(CHANGECHECK);
 
 let darkModeCheck = "white";
-
+let path = window.location.pathname;
+path = path.split("/").pop();
+ 
 blackMode = () => {
     aside.style.backgroundColor = "#E2E2E2"
     
@@ -23,8 +25,11 @@ blackMode = () => {
     bannerText[1].style.color = "#000";
     mainSection.style.backgroundColor = "#f4f4f4";
     mainSectionText.style.color = "#000";
-    mainImgCouple.setAttribute("src","./image/artwork/2016/th-12_nov_2016_2.jpg");
-    mainImgNight.setAttribute("src","./image/artwork/2015/th-11_yandb2.jpg");
+
+    if(path==="index.html"){
+        mainImgCouple.setAttribute("src","./image/artwork/2016/th-12_nov_2016_2.jpg");
+        mainImgNight.setAttribute("src","./image/artwork/2015/th-11_yandb2.jpg");
+    }
 }
 whiteMode = () => {
     aside.style.backgroundColor = "#2d2d2d"
@@ -36,8 +41,10 @@ whiteMode = () => {
     bannerText[1].style.color = "#fff";
     mainSection.style.backgroundColor = "#4b4b4b";
     mainSectionText.style.color = "#fff";
-    mainImgCouple.setAttribute("src","./image/artwork/2016/th-12_nov_2016.jpg");
-    mainImgNight.setAttribute("src","./image/artwork/2015/th-11_yandb3.png");
+    if(path==="index.html"){
+        mainImgCouple.setAttribute("src","./image/artwork/2016/th-12_nov_2016.jpg");
+        mainImgNight.setAttribute("src","./image/artwork/2015/th-11_yandb3.png");
+    }
 
 }
 changeBtn.addEventListener("click",function(){
