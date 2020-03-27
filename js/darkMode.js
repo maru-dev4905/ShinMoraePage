@@ -13,11 +13,14 @@ const LOCALCHECK = localStorage.getItem(CHANGECHECK);
 
 let darkModeCheck = "white";
 let path = window.location.pathname;
+let mainSectionText;
+
 path = path.split("/").pop();
 
 if(path === "index.html"){
-    const mainSectionText = document.querySelector(".section--main--text");
+     mainSectionText = document.querySelector(".section--main--text");
 }
+console.log(path);
 blackMode = () => {
     aside.style.backgroundColor = "#E2E2E2"
     
@@ -41,9 +44,11 @@ whiteMode = () => {
         aGroup[i].style.color="#fff";
         banner.style.backgroundColor = "#000";
     }
+    banner.style.backgroundColor = "#000";
     bannerText[1].style.color = "#fff";
+
+    mainSection.style.backgroundColor = "#4b4b4b";
     if(path==="index.html"){
-        mainSection.style.backgroundColor = "#4b4b4b";
         mainSectionText.style.color = "#fff";
         mainImgCouple.setAttribute("src","./image/artwork/2016/th-12_nov_2016.jpg");
         mainImgNight.setAttribute("src","./image/artwork/2015/th-11_yandb3.png");
