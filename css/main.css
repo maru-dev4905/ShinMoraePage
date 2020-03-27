@@ -138,25 +138,33 @@ p[class=section__main_text]{
 }
 
 .section__gallery{
-    justify-content: left;
+    justify-content:left;
     align-items: flex-start;
     padding: 15px;
 }
 .gallery__column{
-    column-width: auto;
+    column-width: 250px;
     column-gap: 15px;
 }
 .gallery__column figure{
+    max-width: 320px;
     display: inline-block;
     border: 1px solid rgba(0, 0,0, 0.2);
     margin: 0;
     margin-bottom: 15px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    overflow: hidden;
 }
 .gallery__column figure img{
     width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+.gallery__column figure img:hover{
+    transform: scale(1.05);
 }
 .gallery__column figure figcaption{
     border-top: 1px solid rgba(0,0,0,0.2);
     padding:10px;
+    background-color: rgba(255,255,255, 0.8);
 }
